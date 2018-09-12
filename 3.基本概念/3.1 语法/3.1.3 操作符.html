@@ -17,11 +17,11 @@
     var e = undefined;
     var f = null;
     //一元操作符  前置型(变量的值在语句被求值以前改变的) 后置型（包含他们的语句求值之后执行） 与执行语句的优先级相等
-    console.log(++a);
-    console.log(a++);
+    console.log(++a);  //2
+    console.log(a++);  //2
     console.log(++b);  //NaN
     console.log(++c);  //对象就调用valueOf方法
-    console.log(++d);  //
+    console.log(++d);  //2.1
     console.log(++e);  //NaN
     console.log(++f);  //1
     //一元加、减操作符  一元加相当于转型函数：Number()!!!!

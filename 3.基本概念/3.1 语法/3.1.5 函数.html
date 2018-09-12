@@ -13,9 +13,9 @@
     console.log(a());
     //理解参数 函数的参数在内部都是以一个数组表示的
     function zky(){
-        console.log(arguments);   //arguments对象
+        console.log(arguments);   //arguments对象 undefined
         arguments[2]=88;
-        console.log(arguments[2]);
+        console.log(arguments[2]);   //88
         console.log(arguments.callee);   //引用函数自身
     }
     zky(1,2);
@@ -31,8 +31,8 @@
     temp  = qin;
     temp= {};
 //    c(qin);
-    console.log(qin);
-    console.log(temp);
+    console.log(qin);   //Object
+    console.log(temp);  //Object
     var tr = {};
     var Str = [];
     for(var i = 0 ;i<5 ; i++){
